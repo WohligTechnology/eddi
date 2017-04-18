@@ -477,7 +477,7 @@ margin: 0;
     top: 50%;
 }
 .abt-desc {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px;
     hr{
       margin-top: 30px;
 margin-bottom: 30px;
@@ -670,7 +670,7 @@ border: 0px solid #fff;
       font-size: 20px;
     }
     p{
-      font-size: 18px;
+      font-size: 15px;
       text-align: left;
     }
 }
@@ -770,4 +770,8 @@ font-weight: 300;
 line-height: 180%;
     }
   }
+}
+
+.error{
+  color: red;
 }

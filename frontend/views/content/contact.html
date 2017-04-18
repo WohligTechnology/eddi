@@ -31,45 +31,51 @@
             <div class="col-md-6">
                 <div class="contact-form">
                   <h2 class="color-red margin0">Enquire Now</h2>
-                    <form action="">
+                    <form action="" name="formname" ng-submit="submitForm(formData);" ng-if="!formSubmitted" class="form">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name">
+                                    <input type="text" class="form-control" placeholder="Full Name" name="fname" ng-model="formData.name" aplha-only>
+                                    <div class="error" ng-if="formData.name.$invalid && formData.name.$touched"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Parent/Guardian Name">
+                                    <input type="text" class="form-control" placeholder="Parent/Guardian Name" ng-model="formData.gname" name="gname" aplha-only>
+                                    <div class="error" ng-if="formData.name.$invalid && formData.name.$touched"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Mobile Name" required>
+                                    <input type="text" class="form-control" placeholder="Mobile Name" name="mobile" ng-model="formData.mobile" required numbers-only>
+                                    <div class="error" ng-if="formData.name.$invalid && formData.name.$touched"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                    <input type="email" class="form-control" placeholder="Email Address" name="email" ng-model="formData.email" ng-pattern = '/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i' required>
+                                    <div class="error" ng-if="formData.name.$invalid && formData.name.$touched"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Age" required>
+                                    <input type="text" class="form-control" placeholder="Age" name="age" ng-model="formData.age" required numbers-only>
+                                    <div class="error" ng-if="formData.name.$invalid && formData.name.$touched"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Educational Qualifications" required>
+                                    <input type="text" class="form-control" placeholder="Educational Qualifications"  name="eq" ng-model="formData.eq" required>
+                                    <div class="error" ng-if="formData.name.$invalid && formData.name.$touched"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="pull-right">
-                            <button class="btn btn btn-primary-outline">Submit</button>
+                            <button class="btn btn btn-primary-outline" ng-disabled="formName.$invalid">Submit</button>
                         </div>
                     </form>
                 </div>

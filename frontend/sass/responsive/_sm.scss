@@ -1,3 +1,95 @@
  @media (max-width: $screen-sm-max) {
      // Tablet
+     //common css//
+       h2{
+           font-size: 20px !important;
+       }
+         h3{
+           font-size: 18px !important;
+       }
+         h4{
+           font-size: 16px !important;
+       }
+       p{
+           font-size: 12px;
+       }
+
+ //common css//
+
+//course//
+
+     .row.point-row .col-md-4,.row.point-row .col-md-4:first-child,.row.point-row .col-md-4:last-child{
+    border:none;
+}
+
+//course//
+
+//nav//
+
+ .navbar-default {
+    margin: 0;
+}
+
+ .top-banner{
+   padding-top: 60px;
+ }   
+
+ //nav//
+
+//services//
+
+ .main-box .main-box-content p {
+    min-height: 100px;
+}
+
+//services//
+
+//about-us//
+
+.comma1 {
+     @include position(absolute,0 null  null 21px);
+}
+.comma img {
+    width: 60px;
+}
+.comma2 {
+    @include position(absolute,null 21px 0 null);
+}
+
+//about-us//
+
+//footer//
+
+.social-footer li{
+    padding: 0;
+}
+
+.social-footer {
+    margin-top: 8px;
+    li a i {
+    @include size(20px,20px);  
+    font-size: 12px;
+    line-height: 190%;
+}
+}
+
+//home//
+
+.auto{
+    margin: 0 auto;
+}
+
+.service-list ul li {
+    padding: 0px 20px;
+}
+
+.cr-ft-text{
+    text-align: center;
+}
+
+.right-content {
+    @include position (absolute,50% null null 40%);
+}
+//home//
+
  }

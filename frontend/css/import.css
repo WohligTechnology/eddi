@@ -9632,7 +9632,7 @@ homeslider .flexslider {
   top: 50%; }
 
 .abt-desc {
-  padding: 40px 0px 40px 0px; }
+  padding: 40px 0px; }
   .abt-desc hr {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -9780,7 +9780,7 @@ homeslider .flexslider {
   .pt-box h4 {
     font-size: 20px; }
   .pt-box p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: left; }
 
 .wk-sch .table > thead > tr > th {
@@ -9861,6 +9861,9 @@ homeslider .flexslider {
     font-weight: 300;
     line-height: 180%; }
 
+.error {
+  color: red; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
@@ -9900,3 +9903,106 @@ homeslider .flexslider {
 
 .fancybox-nav.fancybox-prev span {
   background-image: url(../img/prev.png); }
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 20px !important; }
+  h3 {
+    font-size: 18px !important; }
+  h4 {
+    font-size: 16px !important; }
+  p {
+    font-size: 12px; }
+  .row.point-row .col-md-4, .row.point-row .col-md-4:first-child, .row.point-row .col-md-4:last-child {
+    border: none; }
+  .navbar-default {
+    margin: 0; }
+  .top-banner {
+    padding-top: 60px; }
+  .main-box .main-box-content p {
+    min-height: 100px; }
+  .comma1 {
+    position: absolute;
+    top: 0;
+    left: 21px; }
+  .comma img {
+    width: 60px; }
+  .comma2 {
+    position: absolute;
+    right: 21px;
+    bottom: 0; }
+  .social-footer li {
+    padding: 0; }
+  .social-footer {
+    margin-top: 8px; }
+    .social-footer li a i {
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      line-height: 190%; }
+  .auto {
+    margin: 0 auto; }
+  .service-list ul li {
+    padding: 0px 20px; }
+  .cr-ft-text {
+    text-align: center; }
+  .right-content {
+    position: absolute;
+    top: 50%;
+    left: 40%; } }
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 20px !important; }
+  h3 {
+    font-size: 18px !important; }
+  h4 {
+    font-size: 16px !important; }
+  p {
+    font-size: 12px; }
+  .middle-curve-img, .cruve-right {
+    display: none; }
+  .navbar-default {
+    margin: 0; }
+  .top-banner {
+    padding-top: 60px; }
+  .why-choos ul li {
+    width: auto; }
+  .service-list ul li {
+    border-right: none;
+    padding: 10px 5px; }
+  .service-below {
+    display: none; }
+  .cr-list-detail ul li {
+    margin: 10px 0; }
+  .home-service-desc {
+    padding-left: 0; }
+  .right-content {
+    position: absolute;
+    top: 50%;
+    left: 36%; }
+  footer p {
+    text-align: center; }
+  footer .pull-right {
+    float: none !important; }
+  .vision-mision-box h1, .obj h1 {
+    font-size: 35px;
+    margin: 0; }
+  .vision-mision-box p, .obj p {
+    font-size: 14px; }
+  .comma {
+    display: none; }
+  .vision-mision-box {
+    padding: 20px; }
+  .main-sr-box hr {
+    margin: 0; }
+  .pt-box {
+    padding: 10px 30px; }
+  .row.point-row .col-md-4, .row.point-row .col-md-4:first-child, .row.point-row .col-md-4:last-child {
+    border: none; }
+  .main-box .main-box-content p {
+    min-height: 130px; }
+  .service-tl-pad {
+    padding: 30px 0px; }
+  .sec-pad {
+    padding: 0 50px; } }
