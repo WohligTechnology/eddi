@@ -119,7 +119,7 @@ myApp.directive('img', function ($compile, $parse) {
                 ngModelCtrl.$parsers.push(fromUser);
             }
         };
-    });
+    })
 
 .directive('numbersOnly', function () {
     return {
