@@ -10,6 +10,4 @@ myApp.filter('myFilter', function () {
         return output;
     };
 
-})
-
-;
+});
