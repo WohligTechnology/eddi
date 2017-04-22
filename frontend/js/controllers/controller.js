@@ -3,16 +3,18 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
-        $(window).load(function () {
-            console.log('loading');
-            $uibModal.open({
+
+$scope.openModal = function() {
+        var modalInstance = $uibModal.open({
                 animation: true,
                 scope: $scope,
                 size: 'lg',
                 windowClass: 'eddy-modal',
                 templateUrl: "views/modal/login.html"
             });
-        })
+};
+            
+$scope.openModal();
 
         $scope.mySlides = [
             'img/01.jpg',
