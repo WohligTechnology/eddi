@@ -175,14 +175,15 @@
           </div>
           <div class="cr-list-detail">
             <ul class="padding0">
-              <li ng-repeat="item in course track by $index">
+              <li ng-repeat="item in course track by $index" ng-class="colorRed?'color-red':''" ng-init="colorRed=item=='Automobile Mechanic'?true:false">
                 {{item}}
               </li>
             </ul>
           </div>
           <div class="cr-ft-text">
             <span class="color-red" style="font-weight:600">
-The course of Diploma in Automobile Engineering is what EduWork offers currently.</span>
+                  The course of Diploma in Automobile Engineering is what EduWork offers currently.
+            </span>
           </div>
         </div>
       </div>

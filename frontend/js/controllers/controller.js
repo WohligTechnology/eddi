@@ -32,7 +32,6 @@ $scope.openModal();
 
         ];
         $scope.course = [
-            'Courses offered by O-HARA College Of Business',
             'National Civil Servants · Local Civil Servants',
             'Police Officer and Firefighter',
             'Certified Public Accountant / Tax Accountant',
